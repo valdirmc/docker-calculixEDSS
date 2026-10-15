@@ -6,13 +6,20 @@ services:
     working_dir: /home/ubuntu
     command: /bin/bash
     tty: true
+<<<<<<< Updated upstream
+=======
+    network_mode: host
+>>>>>>> Stashed changes
     volumes:
       - ./ubuntu-calculix/examples:/home/ubuntu/examples
       - /tmp/.X11-unix:/tmp/.X11-unix
     environment:
       - DISPLAY=${DISPLAY}
+<<<<<<< Updated upstream
     networks:
       - mynet
+=======
+>>>>>>> Stashed changes
     secrets:
       - user_password
 
