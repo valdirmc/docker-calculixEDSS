@@ -1,9 +1,13 @@
-# Resultados de simulação
-ubuntu-calculix/examples/**/*.frd
-ubuntu-calculix/examples/**/*.vtu
-ubuntu-calculix/examples/**/*.dat
-ubuntu-calculix/examples/**/*.sta
-ubuntu-calculix/examples/**/*.cvg
-ubuntu-calculix/examples/**/*.12d
+# Resultados de simulação e pastas de trabalho
+ubuntu-calculix/examples/
 work/
 secret.txt
+
+# Arquivos gerados (caso apareçam em outros lugares)
+*.frd
+*.vtu
+*.vtk
+*.dat
+*.sta
+*.cvg
+*.12d
