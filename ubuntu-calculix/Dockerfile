@@ -8,6 +8,10 @@ RUN apt-get install -y neovim
 RUN apt-get install -y python3 python3-pip && \
     apt-get install -y build-essential gcc g++ gfortran make
 
+# CGX (pré/pós-processador)
+RUN apt-get update -y && apt-get install -y calculix-cgx && \
+    rm -rf /var/lib/apt/lists/*    
+
 # RUN adduser ubuntu
 COPY ./scripts/setup-calculix.sh /opt/setup-calculix.sh
 RUN bash /opt/setup-calculix.sh $CALCULIX_VERSION

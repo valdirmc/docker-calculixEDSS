@@ -1,4 +1,3 @@
-version: '3.0'
 services:
   ubuntu:
     container_name: ubuntu-calculix
@@ -7,12 +6,16 @@ services:
     working_dir: /home/ubuntu
     command: /bin/bash
     tty: true
-    # volumes:
-    #   - ./work:/home/ubuntu
+    volumes:
+      - ./ubuntu-calculix/examples:/home/ubuntu/examples
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+      - DISPLAY=${DISPLAY}
     networks:
       - mynet
     secrets:
       - user_password
+
 secrets:
   user_password:
     file: secret.txt
