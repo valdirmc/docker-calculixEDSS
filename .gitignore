@@ -1,1 +1,9 @@
-**/secret*
+# Resultados de simulação
+ubuntu-calculix/examples/**/*.frd
+ubuntu-calculix/examples/**/*.vtu
+ubuntu-calculix/examples/**/*.dat
+ubuntu-calculix/examples/**/*.sta
+ubuntu-calculix/examples/**/*.cvg
+ubuntu-calculix/examples/**/*.12d
+work/
+secret.txt
