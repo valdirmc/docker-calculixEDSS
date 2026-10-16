@@ -9,6 +9,7 @@ services:
     volumes:
       - ./ubuntu-calculix/examples:/home/ubuntu/examples
       - /tmp/.X11-unix:/tmp/.X11-unix
+      - /run/media/valdir/MAIN/000_VALDIR/GIT_PJR/FemEDSS/FemEDSS-app/uploads:/run/media/valdir/MAIN/000_VALDIR/GIT_PJR/FemEDSS/FemEDSS-app/uploads
     environment:
       - DISPLAY=${DISPLAY}
     networks:
